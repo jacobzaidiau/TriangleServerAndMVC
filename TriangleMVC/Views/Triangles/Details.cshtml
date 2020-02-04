@@ -1,0 +1,82 @@
+﻿@model TriangleMVC.Models.Triangle
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Triangle</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Length_1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Length_1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Length_2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Length_2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Length_3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Length_3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Equilateral)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Equilateral)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Isosceles)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Isosceles)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Scalene)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Scalene)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Right_Angle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Right_Angle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Publish_Time)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Publish_Time)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
