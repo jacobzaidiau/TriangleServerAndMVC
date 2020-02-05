@@ -8,7 +8,7 @@ Accessed at http://localhost:53479/TriangleTool.asmx
 
 ## Triangle MVC
 
-This is a quick tool which allows the user to manually edit the results of a triangle. There really are no restrictions on what can be added here so users can get really creative with the results they wish to display.
+This is a tool which allows the user to manually edit the results of a triangle. There really are no restrictions on what can be added here so users can get really creative with the results they wish to display.
 
 Accessed at http://localhost:51253/Triangles
 
