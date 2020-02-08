@@ -8,7 +8,9 @@ Accessed at http://localhost:53479/TriangleTool.asmx
 
 ### Instructions for how to develop, use, and test the code.
 
-Download the TriangleWebService folder in Windows Server 2019, or build it yourself in Visual Studio 2019 and place the web service in Windows Server 2019.
+Download the TriangleWebService folder in Windows Server 2019, or build it yourself in Visual Studio 2019 and place the web service in Windows Server 2019. I am using Oracle VM VirtualBox Manager to run the Windows Server 2019 Operating System.
+
+![Image](https://i.imgur.com/ElnFZ93.png)
 
 In Windows Server 2019, open Server Manager, click on Manage > Add Roles and Features, and in features, install .NET Framework 4.5 if it has not been done already. 
 
