@@ -45,6 +45,19 @@ And finally, for completeness, replace "localhost" in your web browser URL with 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Triangle MVC
 
 This is a tool which allows the user to manually edit the results of a triangle. There really are no restrictions on what can be added here so users can get really creative with the results they wish to display.
@@ -56,6 +69,12 @@ Accessed at http://localhost:51253/Triangles
 #### Generating the SQL Database
 
 Using the script.sql file, build an SQL Server with the database name TriangleDB under the server name ".".
+
+In Databases > Securities > Logins, create a new login called IIS APPPOOL\DefaultAppPool. In the Server Roles tab, check the sysadmin Server Role.
+
+![Image](https://i.imgur.com/wYYm8vA.png)
+
+![Image](https://i.imgur.com/TbRve6r.png)
 
 #### Configurating your IP Address
 
