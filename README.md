@@ -41,7 +41,7 @@ Now, simply right click your .asmx file and select Browse. You will be taken to 
 
 And finally, for completeness, replace "localhost" in your web browser URL with the IIS Server IP Address from earlier.
 
-
+![Image](https://i.imgur.com/YRo3Zd1.png)
 
 
 
