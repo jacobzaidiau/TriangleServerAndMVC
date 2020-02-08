@@ -27,7 +27,7 @@ If you do not have IIS Manager, in Windows Powershell, type the following comman
 
 ![](https://i.imgur.com/oFbL2SR.png)
 
-In IIS Manager, in the connections tab on the left, click your computer name > Sites and right click Default Web Site and choose Add Aplication.... In the Add Application menu, type in a name as your Alias (e.g. TriangleWebService) and set the Physical Path to the folder containing your .asmx file. Click OK. 
+In IIS Manager, in the connections tab on the left, click your computer name > Sites and right click Default Web Site and choose Add Application.... In the Add Application menu, type in a name as your Alias (e.g. TriangleWebService) and set the Physical Path to the folder containing your .asmx file. Click OK. 
 
 Go to your Computer Name > Application Pools and verify that the Application Pools you have created, as well as the .NET application pools are currently running. 
 
@@ -76,9 +76,16 @@ In Databases > Securities > Logins, create a new login called IIS APPPOOL\Defaul
 
 ![Image](https://i.imgur.com/TbRve6r.png)
 
-#### Configurating your IP Address
 
-Find your local IP Address by typing `ipconfig` into the terminal of your choice, and replace all IP addresses starting with 192.168.*.* with your own IP Address. The reason for the specific IP address is because I am currently developing an Android Application in Java which sends and captures SOAP requests and responses in order to calculate and determine the nature of the triangles provided by their lengths.
+### Running
+
+In IIS Manager, in the connections tab on the left, click your computer name > Sites and right click Default Web Site and choose Add Aplication.... In the Add Application menu, type in a name as your Alias (e.g. TriangleMVC) and set the Physical Path to the folder containing your .asax file. Click OK. 
+
+Go to your Computer Name > Application Pools and verify that the Application Pools you have created, as well as the .NET application pools are currently running. 
+
+Return to your Computer Name > Sites > Default Web Site and right click your alias name and choose "Switch to Content View". You will see your .asmx file. Right click your Web.config file and choose Edit Permissions, and a Properties window will display. In the Security tab, verify that the users IUSR and IIS_IUSRS exist and have Full control permissions. If not, you will need to click Edit, and Add these users in yourself.
+
+![Image](https://i.imgur.com/oCzELzQ.png)
 
 
 ![Image](https://i.imgur.com/onTKFqn.png)
