@@ -6,6 +6,26 @@ This is the SOAP rest service which computes the calculations necessary for dete
 
 Accessed at http://localhost:53479/TriangleTool.asmx
 
+### Instructions for how to develop, use, and test the code.
+
+Download the TriangleWebService folder in Windows Server 2019, or build it yourself in Visual Studio 2019 and place the web service in Windows Server 2019.
+
+In Windows Server 2019, open Server Manager, click on Manage > Add Roles and Features, and in features, install .NET Framework 4.5 if it has not been done already. Also go to Server and choose IIS from the left panel and note down the IPv4 Address.
+
+If you do not have IIS Manager, in Windows Powershell, type the following command.
+
+`Install-WindowsFeature -name Web-Server -IncludeManagementTools`
+
+In IIS Manager, in the connections tab on the left, click your computer name > Sites and right click Default Web Site and choose Add Aplication.... In the Add Application menu, type in a name as your Alias (e.g. TriangleWebService) and set the Physical Path to the folder containing your .asmx file. Click OK. 
+
+Go to your Computer Name > Application Pools and verify that the Application Pools you have created, as well as the .NET application pools are currently running. 
+
+Return to your Computer Name > Sites > Default Web Site and right click your alias name and choose "Switch to Content View". You will see your .asmx file. Right click your Web.config file and choose Edit Permissions, and a Properties window will display. In the Security tab, verify that the users IUSR and IIS_IUSRS exist and have Full control permissions. If not, you will need to click Edit, and Add these users in yourself.
+
+Now, simply right click your .asmx file and select Browse. You will be taken to a page with all the functions. And finally, for completetion, replace "localhost" in your web browser URL with the IIS Server IP Address from earlier.
+
+
+
 ## Triangle MVC
 
 This is a tool which allows the user to manually edit the results of a triangle. There really are no restrictions on what can be added here so users can get really creative with the results they wish to display.
