@@ -8,7 +8,7 @@ Accessed at http://localhost:53479/TriangleTool.asmx
 
 ### Instructions for how to develop, use, and test the code.
 
-Download the TriangleWebService folder in Windows Server 2019, or build it yourself in Visual Studio 2019 and place the web service in Windows Server 2019. I am using Oracle VM VirtualBox Manager to run the Windows Server 2019 Operating System.
+Download the TriangleWebService folder in Windows Server 2019, or build it yourself in Visual Studio 2019 and place the web service in Windows Server 2019. I am using Oracle VM VirtualBox Manager to run the Windows Server 2019 Operating System. If using a Virtual Machine, set your Network Adapter to Bridged.
 
 ![Image](https://i.imgur.com/ElnFZ93.png)
 
@@ -39,7 +39,7 @@ Now, simply right click your .asmx file and select Browse. You will be taken to 
 
 ![Image](https://i.imgur.com/RHylCv3.png)
 
-And finally, for completeness, replace "localhost" in your web browser URL with the IIS Server IP Address from earlier.
+And finally, for completeness, replace "localhost" in your web browser URL with the IIS Server IP Address from earlier. Test that you can access the Web Service from the computer you will be installing the Triangle Client Application on, or from the host operating system.
 
 ![Image](https://i.imgur.com/YRo3Zd1.png)
 
@@ -89,3 +89,5 @@ Return to your Computer Name > Sites > Default Web Site and right click your ali
 
 
 ![Image](https://i.imgur.com/onTKFqn.png)
+
+And finally, for completeness, replace "localhost" in your web browser URL with the IIS Server IP Address from earlier. Test that you can access the Web Service from the computer you will be installing the Triangle Client Application on, or from the host operating system.
