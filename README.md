@@ -28,6 +28,8 @@ Go to your Computer Name > Application Pools and verify that the Application Poo
 
 Return to your Computer Name > Sites > Default Web Site and right click your alias name and choose "Switch to Content View". You will see your .asmx file. Right click your Web.config file and choose Edit Permissions, and a Properties window will display. In the Security tab, verify that the users IUSR and IIS_IUSRS exist and have Full control permissions. If not, you will need to click Edit, and Add these users in yourself.
 
+![Image](https://i.imgur.com/71GGVET.png)
+
 Now, simply right click your .asmx file and select Browse. You will be taken to a page with all the functions. 
 
 ![Image](https://i.imgur.com/snFft1s.png)
