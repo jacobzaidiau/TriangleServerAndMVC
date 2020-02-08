@@ -12,11 +12,14 @@ Download the TriangleWebService folder in Windows Server 2019, or build it yours
 
 ![Image](https://i.imgur.com/ElnFZ93.png)
 
-In Windows Server 2019, open Server Manager, click on Manage > Add Roles and Features, and in features, install .NET Framework 4.5 if it has not been done already. 
+In Windows Server 2019, open Server Manager, click on Manage > Add Roles and Features. Take note of your current IP Address once you have reached the Server Selection tab.
+
+![Image](https://i.imgur.com/hvLPVdg.png)
+
+
+In the Features tab, install .NET Framework 4.5 if it has not been done already. 
 
 ![Image](https://i.imgur.com/wfxW9mp.png)
-
-Also go to Server and choose IIS from the left panel and note down the IPv4 Address.
 
 If you do not have IIS Manager, in Windows Powershell, type the following command.
 
