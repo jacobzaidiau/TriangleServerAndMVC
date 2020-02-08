@@ -20,6 +20,8 @@ If you do not have IIS Manager, in Windows Powershell, type the following comman
 
 `Install-WindowsFeature -name Web-Server -IncludeManagementTools`
 
+![](blob:https://imgur.com/325f2dd0-d23e-49ec-96d5-036fdf14b48b)
+
 In IIS Manager, in the connections tab on the left, click your computer name > Sites and right click Default Web Site and choose Add Aplication.... In the Add Application menu, type in a name as your Alias (e.g. TriangleWebService) and set the Physical Path to the folder containing your .asmx file. Click OK. 
 
 Go to your Computer Name > Application Pools and verify that the Application Pools you have created, as well as the .NET application pools are currently running. 
